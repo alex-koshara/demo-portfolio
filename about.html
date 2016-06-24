@@ -20,8 +20,8 @@
     <![endif]-->
     <div class="bg__container bg-container__about"><div class="box">
   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle">
-    <polygon points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-    <polygon points="1000,0   1000,86   500,86   500,75.5"></polygon>
+    <polygon class="polygon-left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+    <polygon class="polygon-right" points="1000,0   1000,86   500,86   500,75.5"></polygon>
   </svg>
 </div>
       <div class="container__main">
@@ -114,115 +114,119 @@
       </div>
     </div>
     <div class="container__about">
-      <h1 class="main__about">ОБО МНЕ</h1>
-      <div class="container__avatar"><img src="assets/img/avatar/avar.jpg" alt="Александр Кошара" class="avatar"></div>
-      <1></1>
-      <div class="about__info">
-        <h2 class="about__info-h2">КТО Я</h2>
-        <div class="about__info-text">
-          Я веб разработчик из Симферополя. Мне 25 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-          <br>
-          Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-          
-          
-        </div>
+      <div class="wrapper__about-adaptive">
+        <section class="main__about">
+          <h1 class="main__about-h1">ОБО МНЕ</h1>
+          <div class="container__avatar"><img src="assets/img/avatar/avar.jpg" alt="Александр Кошара" class="avatar"></div>
+          <div class="about__info-me">
+            <h2 class="about__info-h2">КТО Я</h2>
+            <div class="about__info-text">
+              Я веб разработчик из Симферополя. Мне 25 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+              <br>
+              Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+              
+              
+            </div>
+          </div>
+        </section>
+        <section class="info__skill">
+          <h2 class="about__info-h2">чем я могу быть вам полезен</h2>
+          <div class="about__info-text">
+            Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+            
+          </div>
+          <ul class="skill__container">
+            <li class="skill__item"><span class="skill__name">Frontend</span>
+              <ul class="skill__list">
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector html5"></circle>
+                  </svg>
+                  <span class="skill__value">HTML5</span>
+                </li>
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector css3"></circle>
+                  </svg>
+                  <span class="skill__value">CSS3</span>
+                </li>
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector js"></circle>
+                  </svg>
+                  <span class="skill__value">JavaScript &amp;Jquery</span>
+                </li>
+              </ul>
+            </li>
+            <li class="skill__item"><span class="skill__name">Backend</span>
+              <ul class="skill__list">
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector php"></circle>
+                  </svg>
+                  <span class="skill__value">PHP</span>
+                </li>
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector my-sql"></circle>
+                  </svg>
+                  <span class="skill__value">mySQL</span>
+                </li>
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector node-js"></circle>
+                  </svg>
+                  <span class="skill__value">Node.js &amp; npm</span>
+                </li>
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector mongo-db"></circle>
+                  </svg>
+                  <span class="skill__value">Mongo.db</span>
+                </li>
+              </ul>
+            </li>
+            <li class="skill__item"><span class="skill__name">WorkFlow</span>
+              <ul class="skill__list">
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector git"></circle>
+                  </svg>
+                  <span class="skill__value">Git</span>
+                </li>
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector gulp"></circle>
+                  </svg>
+                  <span class="skill__value">Gulp</span>
+                </li>
+                <li class="skill__item-inner">
+                  <svg width="130" height="130" class="g-circles">
+                    <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector bower"></circle>
+                  </svg>
+                  <span class="skill__value">Bower</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
-    <section class="info__skill">
-      <h2 class="about__info-h2">чем я могу быть вам полезен</h2>
-      <div class="about__info-text">
-        Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-        
-      </div>
-      <ul class="skill__container">
-        <li class="skill__item"><span class="skill__name">Frontend</span>
-          <ul class="skill__list">
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector html5"></circle>
-              </svg>
-              <span class="skill__value">HTML5</span>
-            </li>
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector css3"></circle>
-              </svg>
-              <span class="skill__value">CSS3</span>
-            </li>
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector js"></circle>
-              </svg>
-              <span class="skill__value">JavaScript &amp;Jquery</span>
-            </li>
-          </ul>
-        </li>
-        <li class="skill__item"><span class="skill__name">Backend</span>
-          <ul class="skill__list">
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector php"></circle>
-              </svg>
-              <span class="skill__value">PHP</span>
-            </li>
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector my-sql"></circle>
-              </svg>
-              <span class="skill__value">mySQL</span>
-            </li>
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector node-js"></circle>
-              </svg>
-              <span class="skill__value">Node.js &amp; npm</span>
-            </li>
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector mongo-db"></circle>
-              </svg>
-              <span class="skill__value">Mongo.db</span>
-            </li>
-          </ul>
-        </li>
-        <li class="skill__item"><span class="skill__name">WorkFlow</span>
-          <ul class="skill__list">
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector git"></circle>
-              </svg>
-              <span class="skill__value">Git</span>
-            </li>
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector gulp"></circle>
-              </svg>
-              <span class="skill__value">Gulp</span>
-            </li>
-            <li class="skill__item-inner">
-              <svg width="130" height="130" class="g-circles">
-                <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector bower"></circle>
-              </svg>
-              <span class="skill__value">Bower</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <div class="about__info">
-      <h2 class="about__info-h2">КОНТАКТЫ</h2>
-      <ul class="contact__list contact__list-about">
-        <li class="contact__item"><span class="contact__item-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <div class="wrapper__info-about">
+      <div class="about__info">
+        <h2 class="about__info-h2">КОНТАКТЫ</h2>
+        <ul class="contact__list contact__list-about">
+          <li class="contact__item"><span class="contact__item-icon"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 <g>
 	<path fill="#fff" d="M18,24c-1.375,0-2.641-0.469-3.656-1.25C13.594,22.906,12.797,23,12,23C5.922,23,1,18.078,1,12
@@ -236,7 +240,7 @@
 </g>
 </svg>
 </span><a href="skype:alex.koshara1990?call" class="contact__link">skype: alex.koshara1990</a></li>
-        <li class="contact__item"><span class="contact__item-icon">
+          <li class="contact__item"><span class="contact__item-icon">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="23px" height="16.391px" viewBox="0 0 23 16.391" enable-background="new 0 0 23 16.391" xml:space="preserve">
 <g>
@@ -250,7 +254,7 @@
 </g>
 </svg>
 </span><a href="mailto:alex-koshara@mail.ru" class="contact__link">alex-koshara@mail.ru</a></li>
-        <li class="contact__item"><span class="contact__item-icon">
+          <li class="contact__item"><span class="contact__item-icon">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="18.864px" height="18.863px" viewBox="0 0 18.864 18.863" enable-background="new 0 0 18.864 18.863" xml:space="preserve">
 <g>
@@ -265,7 +269,7 @@
 </g>
 </svg>
 </span><a href="tel:+79787759827" class="contact__link">+7 (978) 775 98 27</a></li>
-        <li class="contact__item"><span class="contact__item-icon">
+          <li class="contact__item"><span class="contact__item-icon">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="15.151px" height="21.654px" viewBox="0 0 15.151 21.654" enable-background="new 0 0 15.151 21.654" xml:space="preserve">
 <g id="Glyph_copy_2">
@@ -277,24 +281,24 @@
 </g>
 </svg>
 </span>
-          <div class="contact__link">Республика Крым, Симферополь.</div>
-        </li>
-      </ul>
-    </div>
-    <div class="background__map"></div>
-    <footer class="footer__container footer__about">
-      <div class="container__flex">
-        <p class="container__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool</p>
-        <div class="container__links">
-          <div class="wrapper__adaptive">
-            <ul class="aboutMe__list">
-              <li class="aboutMe__item"><a href="works.html" class="aboutMe__link">Мои работы</a></li>
-              <li class="aboutMe__item"><a href="about.html" class="aboutMe__link">Обо мне</a></li>
-              <li class="aboutMe__item"><a href="blog.html" class="aboutMe__link">Блог</a></li>
-              <li class="aboutMe__item"><a href="index.html" class="aboutMe__link">Авторизация</a></li>
-            </ul>
-            <ul class="aboutMe__social aboutMe__social-blog">
-              <li class="aboutMe__social-item"><a href="vk.com/alex_koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <div class="contact__link">Россия, РК, Симферополь</div>
+          </li>
+        </ul>
+      </div>
+      <div class="background__map">
+        <footer class="footer__container footer__about">
+          <div class="container__flex">
+            <p class="container__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool</p>
+            <div class="container__links">
+              <div class="wrapper__adaptive">
+                <ul class="aboutMe__list">
+                  <li class="aboutMe__item"><a href="works.html" class="aboutMe__link">Мои работы</a></li>
+                  <li class="aboutMe__item"><a href="about.html" class="aboutMe__link">Обо мне</a></li>
+                  <li class="aboutMe__item"><a href="blog.html" class="aboutMe__link">Блог</a></li>
+                  <li class="aboutMe__item"><a href="index.html" class="aboutMe__link">Авторизация</a></li>
+                </ul>
+                <ul class="aboutMe__social aboutMe__social-blog">
+                  <li class="aboutMe__social-item"><a href="vk.com/alex_koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="30.011px" height="17.123px" viewBox="0 0 30.011 17.123" enable-background="new 0 0 30.011 17.123" xml:space="preserve">
 <g>
 	<path d="M27.625,5.832c-3.031,4.031-3.359,3.656-0.859,5.984c2.406,2.234,2.906,3.313,2.984,3.453
@@ -310,7 +314,7 @@
 </g>
 </svg>
 </a></li>
-              <li class="aboutMe__social-item"><a href="https://github.com/alex-koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <li class="aboutMe__social-item"><a href="https://github.com/alex-koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="26px" height="22px" viewBox="0 0 26 22" enable-background="new 0 0 26 22" xml:space="preserve">
 <g>
 	<path d="M25.047,17.422C22.984,21.594,17.313,22,13.25,22c-4.125,0-10.141-0.359-12.281-4.578
@@ -324,7 +328,7 @@
 		S19.406,18,18,18z"/>
 </g>
 </svg></a></li>
-              <li class="aboutMe__social-item"><a href="https://github.com/alex-koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <li class="aboutMe__social-item"><a href="https://github.com/alex-koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="24px" height="22.938px" viewBox="0 0 24 22.938" enable-background="new 0 0 24 22.938" xml:space="preserve">
 <g>
 	<path d="M2.875,5.344H2.844C1.109,5.344,0,4.156,0,2.672C0,1.156,1.156,0,2.906,0c1.766,0,2.859,1.156,2.875,2.672
@@ -334,22 +338,24 @@
 		/>
 </g>
 </svg></a></li>
-            </ul>
+                </ul>
+              </div>
+              <ul class="contact__list">
+                <li class="contact__item"><a href="skype:alex.koshara1990?call" class="contact__link">skype: alex.koshara1990</a></li>
+                <li class="contact__item"><a href="mailto:alex-koshara@mail.ru" class="contact__link">alex-koshara@mail.ru</a></li>
+                <li class="contact__item"><a href="tel:+79787759827" class="contact__link">+7 (978) 775 98 27</a></li>
+                <li class="contact__item">
+                  <div class="contact__link">Республика Крым, Симферополь.</div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="contact__list">
-            <li class="contact__item"><a href="skype:alex.koshara1990?call" class="contact__link">skype: alex.koshara1990</a></li>
-            <li class="contact__item"><a href="mailto:alex-koshara@mail.ru" class="contact__link">alex-koshara@mail.ru</a></li>
-            <li class="contact__item"><a href="tel:+79787759827" class="contact__link">+7 (978) 775 98 27</a></li>
-            <li class="contact__item">
-              <div class="contact__link">Республика Крым, Симферополь.</div>
-            </li>
-          </ul>
-        </div>
+          <div class="footer__copyright-blog">
+            <p class="footer__copyright">&copy; Александр Кошара</p>
+            <p class="footer__text">создано с любовью в LoftSchool 2016</p>
+          </div>
+        </footer>
       </div>
-      <div class="footer__copyright-blog">
-        <p class="footer__copyright">&copy; Александр Кошара</p>
-        <p class="footer__text">создано с любовью в LoftSchool 2016</p>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>
