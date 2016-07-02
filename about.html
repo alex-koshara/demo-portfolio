@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Loftschool builder</title>
+    <title>Koshara Alexander</title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -13,11 +13,24 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
     <script src="assets/js/foundation.js" defer></script>
     <script src="assets/js/app.js" defer></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;amp" type="text/javascript"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
+    <div id="popup__nav" class="popup not-visible"><a id="popup__close" href="#" class="popup__close"> </a>
+      <nav class="popup__nav">
+        <ul class="aboutMe__list">
+          <li class="aboutMe__item"><a href="works.html" class="aboutMe__link">Мои работы</a></li>
+          <li class="aboutMe__item"><a href="about.html" class="aboutMe__link aboutMe__link-active">Обо мне</a></li>
+          <li class="aboutMe__item"><a href="blog.html" class="aboutMe__link">Блог</a></li>
+          <li class="aboutMe__item"><a href="index.html" class="aboutMe__link">Авторизация</a></li>
+        </ul>
+      </nav>
+      <div class="popup__left-bg"></div>
+      <div class="popup__right-bg"></div>
+    </div>
     <div class="bg__container bg-container__about"><div class="box">
   <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle">
     <polygon class="polygon-left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
@@ -68,7 +81,7 @@
 </g>
 </svg></a></li>
           </ul>
-          <div class="nav__hamburher"><a class="nav__hamburher-link"><svg class="hamburger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <div class="nav__hamburher"><a id="mainNav" href="#" class="nav__hamburher-link"><svg class="hamburger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="40px" height="35px" viewBox="0 0 40 35" enable-background="new 0 0 40 35" xml:space="preserve">
 <path d="M40,2.5C40,3.881,38.881,5,37.5,5h-35C1.119,5,0,3.881,0,2.5l0,0C0,1.119,1.119,0,2.5,0h35
 	C38.881,0,40,1.119,40,2.5L40,2.5z"/>
@@ -116,7 +129,20 @@
     <div class="container__about">
       <div class="wrapper__about-adaptive">
         <section class="main__about">
-          <h1 class="main__about-h1">ОБО МНЕ</h1>
+          <h1 class="main__about-h1">ОБО МНЕ</h1><span class="main__about-stars"><svg class="stars2" version="1.1" id="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="171.5px" height="132.5px" viewBox="0 0 171.5 132.5" enable-background="new 0 0 171.5 132.5" xml:space="preserve">
+<circle cx="4.25" cy="92.25" r="4.25"/>
+<circle cx="48.25" cy="128.25" r="4.25"/>
+<circle cx="72.75" cy="52.75" r="4.75"/>
+<circle cx="8.25" cy="22.25" r="4.25"/>
+<circle cx="117.25" cy="96.25" r="2.75"/>
+<circle cx="126.25" cy="41.25" r="1.911"/>
+<circle cx="167.25" cy="4.25" r="4.25"/>
+<polyline fill="none" stroke-miterlimit="10" points="72.75,52.75 117.25,96.25 4.25,92.25 48.25,128.25 
+	117.25,96.25 167.25,4.25 126.25,41.25 72.75,54.334 8.25,22.25 "/>
+<line fill="none"  stroke-miterlimit="10" x1="48.25" y1="131.334" x2="8.5" y2="24.339"/>
+</svg>
+</span>
           <div class="container__avatar"><img src="assets/img/avatar/avar.jpg" alt="Александр Кошара" class="avatar"></div>
           <div class="about__info-me">
             <h2 class="about__info-h2">КТО Я</h2>
@@ -141,21 +167,21 @@
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector html5"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector html5 null__stroke"></circle>
                   </svg>
                   <span class="skill__value">HTML5</span>
                 </li>
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector css3"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector css3 null__stroke"></circle>
                   </svg>
                   <span class="skill__value">CSS3</span>
                 </li>
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector js"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector js null__stroke"></circle>
                   </svg>
                   <span class="skill__value">JavaScript &amp;Jquery</span>
                 </li>
@@ -166,28 +192,28 @@
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector php"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector php null__stroke"></circle>
                   </svg>
                   <span class="skill__value">PHP</span>
                 </li>
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector my-sql"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector my-sql null__stroke"></circle>
                   </svg>
                   <span class="skill__value">mySQL</span>
                 </li>
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector node-js"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector node-js null__stroke"></circle>
                   </svg>
                   <span class="skill__value">Node.js &amp; npm</span>
                 </li>
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector mongo-db"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector mongo-db null__stroke"></circle>
                   </svg>
                   <span class="skill__value">Mongo.db</span>
                 </li>
@@ -198,21 +224,21 @@
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector git"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector git null__stroke"></circle>
                   </svg>
                   <span class="skill__value">Git</span>
                 </li>
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector gulp"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector gulp null__stroke"></circle>
                   </svg>
                   <span class="skill__value">Gulp</span>
                 </li>
                 <li class="skill__item-inner">
                   <svg width="130" height="130" class="g-circles">
                     <circle cy="65" r="50" cx="65" stroke="#ccc" fill="none"></circle>
-                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector bower"></circle>
+                    <circle cx="205" r="50" cy="65" transform="rotate(-90 135 135)" class="sector bower null__stroke"></circle>
                   </svg>
                   <span class="skill__value">Bower</span>
                 </li>
@@ -285,20 +311,21 @@
           </li>
         </ul>
       </div>
-      <div class="background__map">
-        <footer class="footer__container footer__about">
-          <div class="container__flex">
-            <p class="container__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool</p>
-            <div class="container__links">
-              <div class="wrapper__adaptive">
-                <ul class="aboutMe__list">
-                  <li class="aboutMe__item"><a href="works.html" class="aboutMe__link">Мои работы</a></li>
-                  <li class="aboutMe__item"><a href="about.html" class="aboutMe__link">Обо мне</a></li>
-                  <li class="aboutMe__item"><a href="blog.html" class="aboutMe__link">Блог</a></li>
-                  <li class="aboutMe__item"><a href="index.html" class="aboutMe__link">Авторизация</a></li>
-                </ul>
-                <ul class="aboutMe__social aboutMe__social-blog">
-                  <li class="aboutMe__social-item"><a href="vk.com/alex_koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <div id="google-map" class="background__map google-maps"><iframe id="google-map" class="google-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22590.455106805!2d34.140650261621104!3d44.94759354167801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1467373781042"  frameborder="0" allowfullscreen></iframe>
+      </div>
+      <footer class="footer__container footer__about">
+        <div class="container__flex">
+          <p class="container__text">Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool</p>
+          <div class="container__links">
+            <div class="wrapper__adaptive">
+              <ul class="aboutMe__list">
+                <li class="aboutMe__item"><a href="works.html" class="aboutMe__link">Мои работы</a></li>
+                <li class="aboutMe__item"><a href="about.html" class="aboutMe__link">Обо мне</a></li>
+                <li class="aboutMe__item"><a href="blog.html" class="aboutMe__link">Блог</a></li>
+                <li class="aboutMe__item"><a href="index.html" class="aboutMe__link">Авторизация</a></li>
+              </ul>
+              <ul class="aboutMe__social aboutMe__social-blog">
+                <li class="aboutMe__social-item"><a href="vk.com/alex_koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="30.011px" height="17.123px" viewBox="0 0 30.011 17.123" enable-background="new 0 0 30.011 17.123" xml:space="preserve">
 <g>
 	<path d="M27.625,5.832c-3.031,4.031-3.359,3.656-0.859,5.984c2.406,2.234,2.906,3.313,2.984,3.453
@@ -314,7 +341,7 @@
 </g>
 </svg>
 </a></li>
-                  <li class="aboutMe__social-item"><a href="https://github.com/alex-koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <li class="aboutMe__social-item"><a href="https://github.com/alex-koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="26px" height="22px" viewBox="0 0 26 22" enable-background="new 0 0 26 22" xml:space="preserve">
 <g>
 	<path d="M25.047,17.422C22.984,21.594,17.313,22,13.25,22c-4.125,0-10.141-0.359-12.281-4.578
@@ -328,7 +355,7 @@
 		S19.406,18,18,18z"/>
 </g>
 </svg></a></li>
-                  <li class="aboutMe__social-item"><a href="https://github.com/alex-koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <li class="aboutMe__social-item"><a href="https://github.com/alex-koshara" class="aboutMe__social-a social__blog"><svg class="social-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="24px" height="22.938px" viewBox="0 0 24 22.938" enable-background="new 0 0 24 22.938" xml:space="preserve">
 <g>
 	<path d="M2.875,5.344H2.844C1.109,5.344,0,4.156,0,2.672C0,1.156,1.156,0,2.906,0c1.766,0,2.859,1.156,2.875,2.672
@@ -338,24 +365,23 @@
 		/>
 </g>
 </svg></a></li>
-                </ul>
-              </div>
-              <ul class="contact__list">
-                <li class="contact__item"><a href="skype:alex.koshara1990?call" class="contact__link">skype: alex.koshara1990</a></li>
-                <li class="contact__item"><a href="mailto:alex-koshara@mail.ru" class="contact__link">alex-koshara@mail.ru</a></li>
-                <li class="contact__item"><a href="tel:+79787759827" class="contact__link">+7 (978) 775 98 27</a></li>
-                <li class="contact__item">
-                  <div class="contact__link">Республика Крым, Симферополь.</div>
-                </li>
               </ul>
             </div>
+            <ul class="contact__list">
+              <li class="contact__item"><a href="skype:alex.koshara1990?call" class="contact__link">skype: alex.koshara1990</a></li>
+              <li class="contact__item"><a href="mailto:alex-koshara@mail.ru" class="contact__link">alex-koshara@mail.ru</a></li>
+              <li class="contact__item"><a href="tel:+79787759827" class="contact__link">+7 (978) 775 98 27</a></li>
+              <li class="contact__item">
+                <div class="contact__link">Республика Крым, Симферополь.</div>
+              </li>
+            </ul>
           </div>
-          <div class="footer__copyright-blog">
-            <p class="footer__copyright">&copy; Александр Кошара</p>
-            <p class="footer__text">создано с любовью в LoftSchool 2016</p>
-          </div>
-        </footer>
-      </div>
+        </div>
+        <div class="footer__copyright-blog">
+          <p class="footer__copyright">&copy; Александр Кошара</p>
+          <p class="footer__text">создано с любовью в LoftSchool 2016</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

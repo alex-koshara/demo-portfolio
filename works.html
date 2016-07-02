@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Loftschool builder</title>
+    <title>Koshara Alexander</title>
     <meta content="" name="author">
     <meta content="" name="description">
     <meta content="" name="keywords">
@@ -13,11 +13,24 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
     <script src="assets/js/foundation.js" defer></script>
     <script src="assets/js/app.js" defer></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;amp" type="text/javascript"></script>
   </head>
   <body>
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
+    <div id="popup__nav" class="popup not-visible"><a id="popup__close" href="#" class="popup__close"> </a>
+      <nav class="popup__nav">
+        <ul class="aboutMe__list">
+          <li class="aboutMe__item"><a href="works.html" class="aboutMe__link">Мои работы</a></li>
+          <li class="aboutMe__item"><a href="about.html" class="aboutMe__link aboutMe__link-active">Обо мне</a></li>
+          <li class="aboutMe__item"><a href="blog.html" class="aboutMe__link">Блог</a></li>
+          <li class="aboutMe__item"><a href="index.html" class="aboutMe__link">Авторизация</a></li>
+        </ul>
+      </nav>
+      <div class="popup__left-bg"></div>
+      <div class="popup__right-bg"></div>
+    </div>
     <div class="bg__container bg-container__works">
       <div class="wrapper__traingle">
         <h1 class="main__about">МОИ РАБОТЫ</h1><div class="box">
@@ -71,7 +84,7 @@
 </g>
 </svg></a></li>
           </ul>
-          <div class="nav__hamburher"><a class="nav__hamburher-link"><svg class="hamburger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <div class="nav__hamburher"><a id="mainNav" href="#" class="nav__hamburher-link"><svg class="hamburger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="40px" height="35px" viewBox="0 0 40 35" enable-background="new 0 0 40 35" xml:space="preserve">
 <path d="M40,2.5C40,3.881,38.881,5,37.5,5h-35C1.119,5,0,3.881,0,2.5l0,0C0,1.119,1.119,0,2.5,0h35
 	C38.881,0,40,1.119,40,2.5L40,2.5z"/>
@@ -124,9 +137,9 @@
           <div class="slider__skills-text">HTML, CSS, JAVASCRIPT</div><a href="#" class="slider__link-show">Посмотреть сайт</a>
         </div>
       </div>
-      <div class="slider__nav">
-        <div class="slider__nav-prev"><img src="assets/img/works/demo1.jpg" class="show__slider-img"></div>
-        <div class="slider__nav-next"><img src="assets/img/works/demo2.jpg" class="show__slider-img"></div>
+      <div class="slider__control">
+        <div class="slider__control-prev"><a href="#" class="control__down">up</a><img src="assets/img/works/demo1.jpg" class="show__slider-img"></div>
+        <div class="slider__control-next"><a href="#" class="control__up">down</a><img src="assets/img/works/demo2.jpg" class="show__slider-img"></div>
       </div>
     </div>
     <div class="container__comments">
