@@ -129,17 +129,35 @@
         </div>
       </div>
     </div>
-    <div class="container__slider">
-      <div class="slider__preview"><img src="assets/img/works/demoWorks.png" class="slider__preview-img"></div>
+    <div class="container__slider js-slider">
+      <div class="slider__preview">
+        <div class="slider__preview-img"></div>
+        <ul class="slider__list-container">
+          <li data-id="work1" data-name="Сайт школы" data-description="HTML, CSS, JS" data-link="#first" data-img="assets/img/works/work1.png" class="slider__item"><img src="assets/img/works/work1.png" alt="Мои работы" class="slider__image"></li>
+          <li data-id="work2" data-name="WORK2" data-description="HTML, CSS, Jquery" data-link="#second" data-img="assets/img/works/work2.png" class="slider__item"><img src="assets/img/works/work2.png" alt="Мои работы" class="slider__image"></li>
+          <li data-id="work3" data-name="WORK3" data-description="HTML, CSS, GULP" data-link="#third" data-img="assets/img/works/work3.png" class="slider__item"><img src="assets/img/works/work3.png" alt="Мои работы" class="slider__image"></li>
+          <li data-id="work4" data-name="WORK4" data-description="HTML, CSS, JSON" data-link="#fourth" data-img="assets/img/works/work4.png" class="slider__item"><img src="assets/img/works/work4.png" alt="Мои работы" class="slider__image"></li>
+        </ul>
+      </div>
       <div class="slider__skills">
         <div class="wrapper__skills">
-          <h2 class="about__info-h2">САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ </h2>
+          <h2 class="about__name-h2">САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ </h2>
           <div class="slider__skills-text">HTML, CSS, JAVASCRIPT</div><a href="#" class="slider__link-show">Посмотреть сайт</a>
         </div>
       </div>
-      <div class="slider__control">
-        <div class="slider__control-prev"><a href="#" class="control__down">up</a><img src="assets/img/works/demo1.jpg" class="show__slider-img"></div>
-        <div class="slider__control-next"><a href="#" class="control__up">down</a><img src="assets/img/works/demo2.jpg" class="show__slider-img"></div>
+      <div class="slider__controls">
+        <div class="slider__control slider__control-left js-slider__prev">
+          <div class="slider__control-wrapper">
+            <div style="top: -100%; background-image: url('assets/img/works/work4.png');" class="slider__control-previw slider__control-preview-next js-slider__control-image_next"></div>
+            <div style="top: 0; background-image: url('assets/img/works/work4.png');" class="slider__control-previw slider__control-preview-current js-slider__control-image_current"></div>
+          </div><a href="#" class="control__down">up</a>
+        </div>
+        <div class="slider__control slider__control-right js-slider__next"> 
+          <div class="slider__control-wrapper">
+            <div style="top: 100%; background-image: url('assets/img/works/work2.png');" class="slider__control-previw slider__control-preview-next js-slider__control-image_next"></div>
+            <div style="top: 0; background-image: url('assets/img/works/work2.png');" class="slider__control-previw slider__control-preview-current js-slider__control-image_current"></div>
+          </div><a href="#" class="control__up">down</a>
+        </div>
       </div>
     </div>
     <div class="container__comments">
